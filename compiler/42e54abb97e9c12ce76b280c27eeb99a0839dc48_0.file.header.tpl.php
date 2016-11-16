@@ -1,3 +1,29 @@
+<?php /* Smarty version 3.1.27, created on 2016-11-16 20:12:34
+         compiled from "C:\xampp\htdocs\TIS\tis\styles\templates\global\header.tpl" */ ?>
+<?php
+/*%%SmartyHeaderCode:21536582cafa23d1174_39563515%%*/
+if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '42e54abb97e9c12ce76b280c27eeb99a0839dc48' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\TIS\\tis\\styles\\templates\\global\\header.tpl',
+      1 => 1479323551,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '21536582cafa23d1174_39563515',
+  'has_nocache_code' => false,
+  'version' => '3.1.27',
+  'unifunc' => 'content_582cafa243ebc1_57769331',
+),false);
+/*/%%SmartyHeaderCode%%*/
+if ($_valid && !is_callable('content_582cafa243ebc1_57769331')) {
+function content_582cafa243ebc1_57769331 ($_smarty_tpl) {
+
+$_smarty_tpl->properties['nocache_hash'] = '21536582cafa23d1174_39563515';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,4 +48,6 @@
     <link rel="stylesheet" type="text/css" href="styles/css/plantelDocente.css">
 
 </head>
-<body>
+<body><?php }
+}
+?>
