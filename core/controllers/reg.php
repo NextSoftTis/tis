@@ -19,11 +19,6 @@ $dedica = $_POST['dedicacion'];
 
 $req = (strlen($nombre)*strlen($apePat)*strlen($apeMat)*strlen($fecNac)*strlen($sex)*strlen($telefono)*strlen($celular)*strlen($direccion)*strlen($correo)*strlen($titulos)*strlen($dedica)) or die("No se han lleando los datos correctamente.");
 
-
-// mysql_query("INSERT INTO USUARIO VALUES ('','$ci','$nombre','$apePat','$apeMat','$titulos','$dedica')", $link) or die("<h2>Error</h2>");
-// echo '
-//             <h2>Registro complet</h2>
-// ';
 $result = mysqli_query($link, "INSERT INTO DOCENTE VALUES ('','$ci','$nombre','$apePat','$apeMat','$titulos','$dedica')") or die("<h2>Error</h2>");
 echo '<h2>Registro completado exitosamente</h2>';
 ?>

@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-11-16 22:07:41
+<?php /* Smarty version 3.1.27, created on 2016-11-17 15:37:09
          compiled from "/opt/lampp/htdocs/tis/styles/templates/home/login.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1596239557582cca9db555c7_91040078%%*/
+/*%%SmartyHeaderCode:181706797582dc095991e35_68863371%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '398e70ae035737d9c740b724fd3856d56ca689ed' => 
     array (
       0 => '/opt/lampp/htdocs/tis/styles/templates/home/login.tpl',
-      1 => 1479329520,
+      1 => 1479393415,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1596239557582cca9db555c7_91040078',
+  'nocache_hash' => '181706797582dc095991e35_68863371',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_582cca9dc1f693_74098564',
+  'unifunc' => 'content_582dc095e04841_53312000',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_582cca9dc1f693_74098564')) {
-function content_582cca9dc1f693_74098564 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_582dc095e04841_53312000')) {
+function content_582dc095e04841_53312000 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1596239557582cca9db555c7_91040078';
+$_smarty_tpl->properties['nocache_hash'] = '181706797582dc095991e35_68863371';
 echo $_smarty_tpl->getSubTemplate ('global/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
 ?>
 
@@ -41,12 +41,12 @@ echo $_smarty_tpl->getSubTemplate ('global/header.tpl', $_smarty_tpl->cache_id, 
 </div>
 
 <div class="container formulario">
-	<form class="form-group">
+	<form action="core/controllers/sesion.php" method="POST">
 		<div class="form-group">
 			<h3><strong>Inicie sesion por favor</strong></h3><br>
-			<input id="user"  type="text" class="form-control" placeholder="nombre de usuario" name=""><br>
-			<input id= "pass" type="password" class="form-control" placeholder="contraseña" name=""><br>
-			<input id= "button" type="button" class="btn btn-success" value="	Ingresar" name="">
+			<input type="text" class="form-control" placeholder="nombre de usuario" name="user"><br>
+			<input type="password" class="form-control" placeholder="contraseña" name="pass"><br>
+			<input type="submit" class="btn btn-success" value="	Ingresar" name="login">
 		</div>
 	</form>
 </div>

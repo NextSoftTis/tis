@@ -12,12 +12,12 @@
 </div>
 
 <div class="container formulario">
-	<form class="form-group">
+	<form action="core/controllers/sesion.php" method="POST">
 		<div class="form-group">
 			<h3><strong>Inicie sesion por favor</strong></h3><br>
-			<input id="user"  type="text" class="form-control" placeholder="nombre de usuario" name=""><br>
-			<input id= "pass" type="password" class="form-control" placeholder="contraseña" name=""><br>
-			<input id= "button" type="button" class="btn btn-success" value="	Ingresar" name="">
+			<input type="text" class="form-control" placeholder="nombre de usuario" name="user"><br>
+			<input type="password" class="form-control" placeholder="contraseña" name="pass"><br>
+			<input type="submit" class="btn btn-success" value="	Ingresar" name="login">
 		</div>
 	</form>
 </div>
