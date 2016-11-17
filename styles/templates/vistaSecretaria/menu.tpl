@@ -29,7 +29,7 @@
 				<a href=""><img class="img-circle img-responsive" src="styles/images/historicos.png">Historicos</a>
 			</div>
 			<div class="col-sm-2">
-				<a href="?view=registro"><img class="img-circle img-responsive" src="styles/images/registros.png">Registros</a>
+				<a href="?view=registroDocentes"><img class="img-circle img-responsive" src="styles/images/registros.png">Registros</a>
 			</div>
 		</div>
 	</div>

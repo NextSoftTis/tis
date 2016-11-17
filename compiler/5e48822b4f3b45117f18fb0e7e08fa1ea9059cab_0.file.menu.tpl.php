@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-11-16 00:43:13
+<?php /* Smarty version 3.1.27, created on 2016-11-16 21:17:52
          compiled from "/opt/lampp/htdocs/tis/styles/templates/vistaSecretaria/menu.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1610954623582b9d910e82e5_40078825%%*/
+/*%%SmartyHeaderCode:2140040700582cbef0541661_70212424%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5e48822b4f3b45117f18fb0e7e08fa1ea9059cab' => 
     array (
       0 => '/opt/lampp/htdocs/tis/styles/templates/vistaSecretaria/menu.tpl',
-      1 => 1479253390,
+      1 => 1479327463,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1610954623582b9d910e82e5_40078825',
+  'nocache_hash' => '2140040700582cbef0541661_70212424',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_582b9d912692f2_59039409',
+  'unifunc' => 'content_582cbef05ad8a4_66466942',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_582b9d912692f2_59039409')) {
-function content_582b9d912692f2_59039409 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_582cbef05ad8a4_66466942')) {
+function content_582cbef05ad8a4_66466942 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1610954623582b9d910e82e5_40078825';
+$_smarty_tpl->properties['nocache_hash'] = '2140040700582cbef0541661_70212424';
 echo $_smarty_tpl->getSubTemplate ('global/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
 ?>
 
@@ -58,7 +58,7 @@ echo $_smarty_tpl->getSubTemplate ('global/header.tpl', $_smarty_tpl->cache_id, 
 				<a href=""><img class="img-circle img-responsive" src="styles/images/historicos.png">Historicos</a>
 			</div>
 			<div class="col-sm-2">
-				<a href="?view=registro"><img class="img-circle img-responsive" src="styles/images/registros.png">Registros</a>
+				<a href="?view=registroDocentes"><img class="img-circle img-responsive" src="styles/images/registros.png">Registros</a>
 			</div>
 		</div>
 	</div>

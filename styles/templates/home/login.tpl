@@ -15,8 +15,8 @@
 	<form class="form-group">
 		<div class="form-group">
 			<h3><strong>Inicie sesion por favor</strong></h3><br>
-			<input type="text" class="form-control" placeholder="nombre de usuario" name=""><br>
-			<input id= "password" type="password" class="form-control" placeholder="contraseña" name=""><br>
+			<input id="user"  type="text" class="form-control" placeholder="nombre de usuario" name=""><br>
+			<input id= "pass" type="password" class="form-control" placeholder="contraseña" name=""><br>
 			<input id= "button" type="button" class="btn btn-success" value="	Ingresar" name="">
 		</div>
 	</form>

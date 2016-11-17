@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-11-15 20:56:35
+<?php /* Smarty version 3.1.27, created on 2016-11-16 21:12:51
          compiled from "/opt/lampp/htdocs/tis/styles/templates/global/header.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:896062122582b68737200d5_30215643%%*/
+/*%%SmartyHeaderCode:1250234270582cbdc39fe971_92913614%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '02864f03df04cbbbc8e3df98df71d55a69b31240' => 
     array (
       0 => '/opt/lampp/htdocs/tis/styles/templates/global/header.tpl',
-      1 => 1479239612,
+      1 => 1479327156,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '896062122582b68737200d5_30215643',
+  'nocache_hash' => '1250234270582cbdc39fe971_92913614',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_582b687372d819_05447843',
+  'unifunc' => 'content_582cbdc413e097_73550285',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_582b687372d819_05447843')) {
-function content_582b687372d819_05447843 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_582cbdc413e097_73550285')) {
+function content_582cbdc413e097_73550285 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '896062122582b68737200d5_30215643';
+$_smarty_tpl->properties['nocache_hash'] = '1250234270582cbdc39fe971_92913614';
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,8 +42,10 @@ $_smarty_tpl->properties['nocache_hash'] = '896062122582b68737200d5_30215643';
     <link rel="stylesheet" href="styles/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-
     <link rel="stylesheet" type="text/css" href="styles/css/menu.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/css/registroDocentes.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/plantelDocente.css">
 
 </head>
 <body><?php }

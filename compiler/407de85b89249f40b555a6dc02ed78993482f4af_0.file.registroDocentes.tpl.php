@@ -1,6 +1,35 @@
-{include 'global/header.tpl'}
+<?php /* Smarty version 3.1.27, created on 2016-11-17 13:53:13
+         compiled from "/opt/lampp/htdocs/tis/styles/templates/vistaSecretaria/registroDocentes.tpl" */ ?>
+<?php
+/*%%SmartyHeaderCode:1889917884582da839c4ebf6_21452857%%*/
+if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '407de85b89249f40b555a6dc02ed78993482f4af' => 
+    array (
+      0 => '/opt/lampp/htdocs/tis/styles/templates/vistaSecretaria/registroDocentes.tpl',
+      1 => 1479387180,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1889917884582da839c4ebf6_21452857',
+  'has_nocache_code' => false,
+  'version' => '3.1.27',
+  'unifunc' => 'content_582da83a3e4769_20638093',
+),false);
+/*/%%SmartyHeaderCode%%*/
+if ($_valid && !is_callable('content_582da83a3e4769_20638093')) {
+function content_582da83a3e4769_20638093 ($_smarty_tpl) {
 
-{include 'global/title.tpl'}
+$_smarty_tpl->properties['nocache_hash'] = '1889917884582da839c4ebf6_21452857';
+echo $_smarty_tpl->getSubTemplate ('global/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
+?>
+
+
+<?php echo $_smarty_tpl->getSubTemplate ('global/title.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
+?>
+
 
     <div class="container nt-form-docente">
         
@@ -141,3 +170,6 @@
 
 
     
+<?php }
+}
+?>

@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-11-16 00:23:32
+<?php /* Smarty version 3.1.27, created on 2016-11-16 22:07:41
          compiled from "/opt/lampp/htdocs/tis/styles/templates/home/login.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1464575564582b98f47e1519_63843302%%*/
+/*%%SmartyHeaderCode:1596239557582cca9db555c7_91040078%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '398e70ae035737d9c740b724fd3856d56ca689ed' => 
     array (
       0 => '/opt/lampp/htdocs/tis/styles/templates/home/login.tpl',
-      1 => 1479252209,
+      1 => 1479329520,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1464575564582b98f47e1519_63843302',
+  'nocache_hash' => '1596239557582cca9db555c7_91040078',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_582b98f485bd01_86899694',
+  'unifunc' => 'content_582cca9dc1f693_74098564',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_582b98f485bd01_86899694')) {
-function content_582b98f485bd01_86899694 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_582cca9dc1f693_74098564')) {
+function content_582cca9dc1f693_74098564 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1464575564582b98f47e1519_63843302';
+$_smarty_tpl->properties['nocache_hash'] = '1596239557582cca9db555c7_91040078';
 echo $_smarty_tpl->getSubTemplate ('global/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
 ?>
 
@@ -44,8 +44,8 @@ echo $_smarty_tpl->getSubTemplate ('global/header.tpl', $_smarty_tpl->cache_id, 
 	<form class="form-group">
 		<div class="form-group">
 			<h3><strong>Inicie sesion por favor</strong></h3><br>
-			<input type="text" class="form-control" placeholder="nombre de usuario" name=""><br>
-			<input id= "password" type="password" class="form-control" placeholder="contraseña" name=""><br>
+			<input id="user"  type="text" class="form-control" placeholder="nombre de usuario" name=""><br>
+			<input id= "pass" type="password" class="form-control" placeholder="contraseña" name=""><br>
 			<input id= "button" type="button" class="btn btn-success" value="	Ingresar" name="">
 		</div>
 	</form>
@@ -122,6 +122,7 @@ div.col-sm-4 a {
 		border: 1px solid #9E9E9E;
 	}
 
-</style>e	<?php }
+</style>e	
+<?php }
 }
 ?>

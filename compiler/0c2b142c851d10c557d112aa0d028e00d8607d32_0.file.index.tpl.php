@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-11-16 00:22:00
+<?php /* Smarty version 3.1.27, created on 2016-11-17 05:53:14
          compiled from "/opt/lampp/htdocs/tis/styles/templates/home/index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:242989785582b9898289d44_29254005%%*/
+/*%%SmartyHeaderCode:1753935265582d37bace30e5_17617150%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,26 +9,63 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0c2b142c851d10c557d112aa0d028e00d8607d32' => 
     array (
       0 => '/opt/lampp/htdocs/tis/styles/templates/home/index.tpl',
-      1 => 1479252116,
+      1 => 1479330838,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '242989785582b9898289d44_29254005',
+  'nocache_hash' => '1753935265582d37bace30e5_17617150',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_582b98985474e5_20898723',
+  'unifunc' => 'content_582d37bb4caa08_08033418',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_582b98985474e5_20898723')) {
-function content_582b98985474e5_20898723 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_582d37bb4caa08_08033418')) {
+function content_582d37bb4caa08_08033418 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '242989785582b9898289d44_29254005';
+$_smarty_tpl->properties['nocache_hash'] = '1753935265582d37bace30e5_17617150';
 echo $_smarty_tpl->getSubTemplate ('global/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
 ?>
 
 
 <?php echo $_smarty_tpl->getSubTemplate ('global/title.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
 ?>
+
+
+ <?php echo '<?php
+';?>// create a connection between php and mysql database
+
+$hostname = "localhost";
+
+$username = "root";
+
+$password = "";
+
+// your database name
+$databaseName = "tis";
+
+// create The connection
+$connect = mysqli_connect($hostname, $username, $password);
+mysqli_select_db($connect, $databaseName);
+
+// the mysql query
+$query = "SELECT * FROM `USUARIO`";
+
+$result = mysqli_query($connect, $query);
+
+// using while loop to dispaly data from database
+while($row = mysqli_fetch_array($result))
+  {
+
+    echo "$row[0] - $row[1] - $row[2] - $row[3]<br>";
+
+  }
+  
+// free your result
+  mysqli_free_result($result);
+
+// close the connection
+  mysqli_close($connect);
+<?php echo '?>';?>
 
 
 <div class="container">
