@@ -1,9 +1,48 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     14/11/2016 18:46:26                          */
+/* Created on:     18/11/2016 16:38:47                          */
 /*==============================================================*/
 
 
+drop table if exists AUXILIAR;
+
+drop table if exists CARGO;
+
+drop table if exists CARRERA;
+
+drop table if exists CURSO;
+
+drop table if exists DOCENTE;
+
+drop table if exists HORARIO_DOC;
+
+drop table if exists MATERIA;
+
+drop table if exists MATERIA_DICTA;
+
+drop table if exists NOMBRAMIENTO_AUX;
+
+drop table if exists NOMBRAMIENTO_DOC;
+
+drop table if exists PLAN;
+
+drop table if exists RESERVA;
+
+drop table if exists SALA;
+
+drop table if exists SEGUIMIENTO_AUX;
+
+drop table if exists SEGUIMIENTO_DOC;
+
+drop table if exists SEGUIMIENTO_EXCLU_DOC;
+
+drop table if exists SESION;
+
+drop table if exists TABLA_HORARIO;
+
+drop table if exists TIENE;
+
+drop table if exists USUARIO;
 
 /*==============================================================*/
 /* Table: AUXILIAR                                              */
@@ -74,20 +113,20 @@ create table DOCENTE
 (
    ID_DOC               int(10) not null auto_increment,
    ID_AUX               int(10) not null,
-   CI_DOC               int,
-   NOMBRE_DOC           varchar(50),
-   APELLPA_DOC          varchar(50),
-   APELLMA_DOC          varchar(50),
+   CI_DOC               int not null,
+   NOMBRE_DOC           varchar(50) not null,
+   APELLPA_DOC          varchar(50) not null,
+   APELLMA_DOC          varchar(50) not null,
    TITULO_DOC           varchar(50),
    FECHA_NACIMIENTO_DOC date,
    TELEFONO_DOC         int,
    CELULAR_DOC          int,
-   EXTENSIOIN_CI_DOC    varchar(25),
+   EXTENSIOIN_CI_DOC    varchar(25) not null,
    CORREO_DOC           varchar(50),
-   GENERO_DOC           varchar(20),
+   GENERO_DOC           varchar(20) not null,
    DIRECCION_DOC        varchar(80),
    TIEMPO_DEDICACION_DOC varchar(50),
-   CARGO_DOC            varchar(50),
+   OTRO_CARGO_DOC       varchar(50),
    primary key (ID_DOC)
 );
 
@@ -304,13 +343,14 @@ create table USUARIO
 (
    ID_USUARIO           int(10) not null auto_increment,
    ID_CARRERA           int(10) not null,
-   NOMBRE_USUARIO       varchar(20) not null,
-   APELLPA_USUARIO      varchar(20) not null,
-   APELLMA_USUARIO      varchar(20) not null,
-   ESTADO_USUARIO       varchar(25),
+   NOMBRE_USUARIO       varchar(50) not null,
+   APELLPA_USUARIO      varchar(50) not null,
+   APELLMA_USUARIO      varchar(50) not null,
+   ESTADO_USUARIO       varchar(60),
    GENERO_USUARIO       varchar(15),
-   CUENTA               varchar(20),
-   CONTRASENIA          varchar(15),
+   CUENTA               varchar(50),
+   CONTRASENIA          md5(15),
+   ROL_USUARIO          varchar(30) not null,
    primary key (ID_USUARIO)
 );
 
